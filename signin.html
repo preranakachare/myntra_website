@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - E-commerce</title>
+    <link rel="stylesheet" href="signIn.css">
+</head>
+<body>
+    <!-- <header>
+        <div class="logo">
+            <a href="/">BrandName</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <main class="signin-container">
+        <h1>Sign In</h1>
+        <form id="signin-form" action="/signin" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            <button type="submit">Sign In</button>
+            <div class="links">
+                <a href="/forgot-password">Forgot Password?</a>
+                <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BrandName. All rights reserved.</p>
+        <ul>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
