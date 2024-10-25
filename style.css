@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 60px;
+    margin-right: 20px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(63, 62, 62);  
+   /* color:black; */
+    font-size: 13px;
+}
+
+.nav-left ul li a{
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(63, 62, 62); 
+ /* color: aqua; */
+  font-size: 13px;
+}
+
+.search-bar{
+    width: 350px;
+    line-height: 40px;
+    border-radius: 4px;
+    background: #f0eeee;
+}
+.search-bar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    width:85%;
+    font-size: 12px;
+}
+.nav-right.search-bar i{
+    font-size: 13px;
+    color: #727070;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.studio{
+    position: relative;
+}
+.studio span{
+    position: absolute;
+  
+    color: rgb(238,9,47);
+    top: -5px;
+    left: 55px;
+    font-size: 11px;
+}
+.nav-right div{
+    margin: 0 12px;
+    text-align: center;
+}
+
+.nav-right div p{
+  font-size: 12px;
+  font-weight: 700;
+  color: #383636;
+}
+.nav-right div i{
+    font-size: 18px;
+    color: #383636;
+  }
+
+  .nav-left i{
+    font-size: 20px;
+    background-color: #f1efef;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+  }
+  /* media query */
+  @media only screen and (max-width:700px) {
+    .nav-menu{
+    display:none;
+    }
+    .nav-left i{
+       
+        display: block;
+      }
+      img{
+        width: 40px;
+        margin-right: 10px;
+      }
+      header{
+        height: 60px;
+      }
+      .search-bar{
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        left: 0;
+        border-radius: 50px;
+        background: #fff;
+        border: 1px solid #eee;
+      }
+
+      .nav-right.div{
+        margin: 0 7px;
+      }
+      .nav-right.div p{
+        font-size: 10px;
+      }
+    } 
+
+     .hero-section{
+      background-image: url(6d5a80ba-61ad-4409-a8ec-da782a8c9baf1728749438641-DESKTOP-WP-BANNER.webp); 
+     /* background-image: url(9d2a7288-318d-48d6-a6d7-8a933b6ad6341728747850942-HP_01.jpg); */
+      height: 400px;
+      background-size: cover;
+    } 
+   
+
+    /* shop-section */
+    .shop-section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-top: 40px;
+      background-color: white;
+    }
+
+    .box {
+      border: 2px solid black; 
+      height: 400px;
+      width: 23%;
+      padding: 20px 0px 15px;
+      margin-top: 5px;
+      /* margin: 7px; */
+  }
+    .offer-img{
+    /* width:100%;
+    padding-top: 30px; */
+    width: 92%;
+    height: 120px;
+     padding-left: 50px;
+    padding-right: 19px; 
+    margin-left: 50px;
+    margin-right: 10px;
+   } 
+   
+   .box-img{
+    height: 340px;
+    background-size: cover;
+    padding-left: 20px 0px 15px;
+    padding-right: 10px;  
+     margin-left: 12px; 
+    margin-right: 12px; 
+    margin-top: 1px; 
+    /* margin-top: 1rem;
+    margin-bottom: 1rem;
+     */
+    
+}
+.box-content{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* .container{
+  width: 100%;
+ height: 100px;
+
+}
+.container-img{
+  width: 100%;
+  height: 100px;
+   padding-left: 16px;
+  padding-right: 60px; 
+  margin-left:5px;
+  margin-right: 5px;
+  
+} */
+
+/* footer */
+
+footer{
+  margin-top: 15px;
+}
+.foot-panel1{
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.foot-panel2{
+  background-color: #222f3d;
+  color: white;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul{
+  margin-top: 20px;
+}
+
+ul a{
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #dddddd;
+}
+.foot-panel3{
+  background-color:#222f3d;
+  color: white;
+  border-top: 0.5px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
